@@ -49,7 +49,7 @@ getFrac:
 		sllv $t4, $t3, $t2
 		sll $t4, $t4, 9
 		
-		move $s1, $t4 # **** $s1 contains fractional portion(if this value does not equal zero, N is an integer)
+		move $s1, $t4 # **** $s1 contains fractional portion(if this value equals zero, the input was an integer)
 
 getInt:
 		#Gets the integer porition as the first bits 
